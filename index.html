@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dictionary App</title>
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h2>Dictionary.</h2>
+		<main>
+			<form id="form">
+				<input type="text" id="inputSearch" />
+				<button type="submit">Search</button>
+			</form>
+			<section class="meanings-block">
+				<h3 id="SearchedWord">
+					<span class="main-word" id="mainWord"></span>
+					<span id="phoniticWord" class="phonitic-word"></span>
+				</h3>
+				<div id="definitions-block"></div>
+				<p id="eror" class="error">
+					Sorry pal, we couldn't find definitions for the word you were looking for.
+					<b class="check">Check Spelling</b>
+				</p>
+			</section>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
